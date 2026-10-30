@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Soren Schlassa</title>
+<meta name="description" content="Soren Schlassa, PhD candidate in Philosophy at NYU, working on computation and representation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap">
+<style>
+:root {
+  --fg: #111;
+  --muted: #5e5e5e;
+  --line: #ddd;
+  --link: #1d3d8f;
+  --font: "EB Garamond", Garamond, "Times New Roman", serif;
+  color-scheme: light;
+}
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: #fff; color: var(--fg);
+  font-family: var(--font); font-size: 20px; line-height: 1.5;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 64px 96px;
+}
+p { margin: 0; }
+a { color: var(--link); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 2px; }
+a:hover { color: var(--fg); }
+
+.site { max-width: 920px; margin: 0 auto; display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 40px 64px; }
+
+header { display: flex; flex-direction: column; gap: 14px; }
+h1 { margin: 0; font-size: 1.9rem; font-weight: 500; line-height: 1.15; }
+.photo { display: block; width: 100%; max-width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; }
+.contact { color: var(--muted); font-size: .9em; line-height: 1.5; display: flex; flex-direction: column; }
+
+main { min-width: 0; max-width: 36em; display: flex; flex-direction: column; gap: 1.6em; }
+.about { display: flex; flex-direction: column; gap: 1em; }
+
+summary { cursor: pointer; font-size: 1.3rem; font-weight: 500; }
+summary:focus-visible { outline: 1px dotted currentColor; outline-offset: 3px; }
+summary::marker { color: var(--muted); font-size: .8em; }
+.section { display: flex; flex-direction: column; gap: 1.1em; padding: .8em 0 .4em 1.1em; }
+h3 { margin: 0 0 .3em; font-size: 1em; font-weight: 400; font-style: italic; }
+.items { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: .35em; }
+.items.papers { gap: .8em; }
+.t { font-style: italic; }
+.m { color: var(--muted); }
+.d { display: block; }
+.aside { color: var(--muted); font-size: .85em; border-top: 1px solid var(--line); padding-top: 1em; }
+
+@media (max-width: 720px) {
+  body { padding-block: 40px 64px; font-size: 19px; }
+  .site { grid-template-columns: minmax(0, 1fr); gap: 32px; }
+  header { display: grid; grid-template-columns: minmax(0, 1fr) 120px; align-items: start; gap: 6px 20px; }
+  .photo { grid-column: 2; grid-row: 1 / span 2; }
+  h1 { grid-column: 1; grid-row: 1; }
+  .contact { grid-column: 1; grid-row: 2; }
+}
+</style>
+</head>
+<body>
+<div class="site">
+  <header>
+    <h1>Soren Schlassa</h1>
+    <img class="photo" src="portrait.jpg" alt="Soren Schlassa" width="313" height="313">
+    <p class="contact">
+      <span>Department of Philosophy</span>
+      <span>New York University</span>
+      <span>sws371 [at] nyu.edu</span>
+      <a href="https://drive.google.com/file/d/1vzUwXTC_lfFfAnjFwJQVywGikARsoRGH/view?usp=sharing">CV</a>
+    </p>
+  </header>
+
+  <main>
+    <section class="about">
+      <p>I'm a PhD candidate in the <a href="https://as.nyu.edu/departments/philosophy.html">NYU Department of Philosophy</a>. I teach philosophy of AI at <a href="https://philosophy.barnard.edu/">Barnard College</a>, and I did my undergraduate studies at <a href="https://www.carleton.edu/philosophy/">Carleton College</a>.</p>
+      <p>I work on theoretical questions about computation and representation, both biological and artificial. Mostly, I study what gives representations their structure, and what this means for their role in computation.</p>
+    </section>
+
+    <details id="teaching">
+      <summary>Teaching</summary>
+      <div class="section">
+        <div>
+          <h3>As instructor</h3>
+          <ul class="items">
+            <li><span class="t">Logic</span>, <span class="m">NYU, Spring 2027</span></li>
+            <li><span class="t">Language Models and Philosophy</span>, <span class="m">Barnard College, Fall 2026</span></li>
+            <li><span class="t">Philosophy of Artificial Intelligence</span>, <span class="m">Barnard College, Fall 2025</span></li>
+            <li><span class="t">Logic</span>, <span class="m">NYU, Fall 2025</span></li>
+            <li><span class="t">Minds and Machines</span>, <span class="m">NYU, Summer 2025</span></li>
+            <li><span class="t">Philosophical Applications of Cognitive Science</span>, <span class="m">NYU, Summer 2022</span></li>
+          </ul>
+        </div>
+        <div>
+          <h3>As teaching assistant</h3>
+          <ul class="items">
+            <li><span class="t">Global Ethics</span>, <span class="m">for Kwame Anthony Appiah, Spring 2023</span></li>
+            <li><span class="t">Philosophy of Language</span>, <span class="m">for Matt Mandelkern, Fall 2022</span></li>
+            <li><span class="t">Philosophy of Mind</span>, <span class="m">for Verónica Gómez Sánchez, Spring 2022</span></li>
+            <li><span class="t">Philosophical Applications of Cognitive Science</span>, <span class="m">for Michael Strevens, Fall 2021</span></li>
+          </ul>
+        </div>
+
+      </div>
+    </details>
+
+    <details id="papers">
+      <summary>Papers</summary>
+      <div class="section">
+        <p>My dissertation committee is <a href="http://www.strevens.org/">Michael Strevens</a>, <a href="https://www.nedblock.us/">Ned Block</a>, and <a href="https://consc.net/">David Chalmers</a>.</p>
+        <div>
+          <h3>In progress</h3>
+          <ul class="items papers">
+            <li><span class="t">“How to See Things”</span><span class="d">Develops a computational account of what it is to visually represent objects, drawing heavily on empirical work.</span></li>
+            <li><span class="t">[Paper under review]</span><span class="d">Criticizes recent accounts of the iconic/analog/symbolic. Proposes a fix.</span></li>
+            <li><span class="t">“A Theory of Computational Structure”</span><span class="d">Gives a theory of the space of structures of computational vehicles and their implementation conditions. Uses case studies from neural networks and brains.</span></li>
+          </ul>
+        </div>
+        <p class="aside">Technically, I have an Erdős number of 4 (Erdős – M. Kac – T. Jacobson – B. Allen – me), if you count <a href="https://arxiv.org/abs/1612.02030">these</a> <a href="https://arxiv.org/abs/1612.02029">papers</a> with nearly a thousand authors each. Maybe a better metric would be to weight each link by the log of the number of authors on the paper. Alas, on that definition my number goes up to 15.</p>
+      </div>
+    </details>
+  </main>
+</div>
+</body>
+</html>
